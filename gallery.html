@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>PR Wedding & Garlands - Gallery Page</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center" style="height: 45px;">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                        <a href="#" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+                        <a href="#" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-0"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fas fa-star-of-life me-3"></i>Terapia</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link active">Gallery</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="appointment.html" class="dropdown-item">Appointment</a>
+                                <a href="feature.html" class="dropdown-item">Features</a>
+                                <a href="blog.html" class="dropdown-item">Our Blog</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Appointment</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Gallery</h1>
+                <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-primary">Gallery</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <style>
+            .gallery-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 20px;
+                margin: 0 auto;
+                max-width: 1000px; /* Limiting max width for readability */
+            }
+        
+            .gallery-section h4 {
+                font-size: 1.5rem; /* Responsive font size */
+                margin-bottom: 10px;
+                color: rgb(76, 221, 221);
+            }
+        
+            .gallery-section h1 {
+                font-size: 2.5rem; /* Responsive font size */
+                margin-bottom: 15px;
+            }
+        
+            .gallery-section p {
+                font-size: 1.1rem; /* Responsive font size */
+                line-height: 1.6; /* Improved line spacing */
+                text-align: justify; /* Justifies the text */
+                margin-bottom: 20px;
+            }
+        
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .gallery-section h4 {
+                    font-size: 1.25rem;
+                }
+        
+                .gallery-section h1 {
+                    font-size: 2rem;
+                }
+        
+                .gallery-section p {
+                    font-size: 1rem;
+                }
+            }
+        
+            @media (max-width: 480px) {
+                .gallery-section h4 {
+                    font-size: 1rem;
+                }
+        
+                .gallery-section h1 {
+                    font-size: 1.75rem;
+                }
+        
+                .gallery-section p {
+                    font-size: 0.9rem;
+                }
+            }
+        </style>
+        
+        <div class="gallery-section">
+            <h4>A glimpse into the beauty and memories we capture</h4>
+            <h1>Our Gallery</h1>
+            <p>
+                Dive into our curated gallery and explore moments that capture the essence of beauty, joy, and creativity.
+                Each collection tells a unique story, showcasing our passion for delivering unforgettable experiences.
+                Let these images inspire you to create memories of your own.
+            </p>
+        </div>
+        
+
+        <div class="gallery-wrapper">
+            <div class="gallery-inner">
+                
+              <!--<p style="text-align: justify;padding: 10px;background-color: aliceblue;"><mark>Since 1994,</mark> Sri Ragavendra Real Estate has been dedicated to making property ownership accessible for everyone. Our journey started with high-quality real estate solutions and has expanded to offer affordable, low-budget plots for middle-class families. </p>
+              <p style="text-align: justify;padding: 10px;background-color: aliceblue;">Explore our photo gallery to see our evolution from exquisite homes to well-planned commercial spaces, each reflecting our commitment to quality and innovation. We also provide flexible payment options, including low-budget monthly installments, making it easier for you to secure your dream plot.</p>-->
+                <div class="gallery-img">
+                    <img src="img/gallery/1.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/2.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/3.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/4.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/5.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/6.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/7.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/8.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/9.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/10.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/11.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/12.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/13.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/14.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/15.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/16.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/16.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/17.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/18.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/19.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/20.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/21.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/22.png" alt="Pr Gallery">
+                </div>
+                <!--<div class="gallery-img">
+                    <img src="img/gallery/1.png24.jpg" alt="Pr Gallery">
+                </div>-->
+                <div class="gallery-img">
+                    <img src="img/gallery/23.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/24.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/25.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/26.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/27.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/28.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/29.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/30.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/31.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/32.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/33.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/34.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/35.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/36.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/37.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/38.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/39.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/40.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/41.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/42.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/43.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/44.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/45.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/46.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/47.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/48.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/49.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/50.png" alt="Pr Gallery">
+                </div>
+                <div class="gallery-img">
+                    <img src="img/gallery/4.png" alt="Pr Gallery">
+                </div>
+              
+            </div>
+        </div>
+        <script>
+            const galleryStyleSheet = `
+.gallery-wrapper {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow-x: hidden;
+width: 80%;
+margin: 0 auto;
+
+}
+
+.gallery-wrapper img {
+max-width: 100%;
+transition: all 0.2s ease-in-out;
+}
+
+.gallery-wrapper .gallery-img img {
+cursor: pointer;
+}
+
+.gallery-wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 1rem;
+z-index: 2;
+position: relative;
+}
+
+.gallery-popup.active + .gallery-overlay {
+content: "";
+position: fixed;
+width: 100%;
+height: 100%;
+inset: 0;
+background-color: rgb(0 0 0 / 75%);
+z-index: 5;
+overflow: hidden;
+}
+
+.gallery-popup {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: max-content;
+height: max-content;
+padding: 0px;
+display: none;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+z-index: 6;
+animation: showPopUp 0.45s linear;
+}
+
+.gallery-popup .close,
+.gallery-popup .next,
+.gallery-popup .prev {
+position: absolute;
+top: 0;
+right: 2rem;
+margin-left: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.gallery-popup img {
+width: auto;
+max-height: 100%;
+object-fit: contain;
+}
+
+.gallery-popup .close {
+width: 30px;
+height: 30px;
+cursor: pointer;
+top: 0px;
+right: 0;
+}
+
+.gallery-popup .next {
+right: 0px;
+top: 50%;
+transform: translateY(-50%);
+width: 30px;
+height: 20px;
+font-size: 20px;
+cursor: pointer;
+padding: 10px;
+background-color: rgb(255 255 255 / 75%);
+}
+
+.gallery-popup .prev {
+left: 0px;
+right: auto;
+top: 50%;
+transform: translateY(-50%);
+width: 30px;
+height: 20px;
+font-size: 20px;
+cursor: pointer;
+padding: 10px;
+background-color: rgb(255 255 255 / 75%);
+}
+
+.gallery-wrapper .gallery-inner {
+display: grid;
+gap: 10px;
+grid-template-columns: repeat(4, 1fr);
+position: relative;
+z-index: 4;
+}
+//---------------------------------------------------------
+.gallery-wrapper {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow-x: auto; /* Allow horizontal scrolling */
+width: 80%;
+margin: 0 auto;
+white-space: nowrap; /* Prevent wrapping of images */
+}
+
+.gallery-inner {
+display: flex; /* Flexbox layout for horizontal scrolling */
+gap: 10px;
+}
+
+.gallery-img {
+flex: 0 0 auto; /* Prevent images from shrinking */
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+display: none; /* Hide scroll bar for Webkit browsers */
+}
+
+.gallery-wrapper {
+-ms-overflow-style: none; /* Hide scroll bar for IE and Edge */
+scrollbar-width: none; /* Hide scroll bar for Firefox */
+}
+
+.gallery-wrapper img {
+max-width: 100%;
+transition: all 0.2s ease-in-out;
+}
+
+.gallery-wrapper .gallery-img img {
+cursor: pointer;
+}
+
+/* Other styles remain the same */
+
+
+//---------------------------------------------------------
+@keyframes showPopUp {
+0% {
+    opacity: 0;
+    visibility: hidden;
+}
+50% {
+    opacity: 0.5;
+    visibility: visible;
+}
+100% {
+    opacity: 1;
+    visibility: visible;
+}
+}
+
+@keyframes imgTransitionNext {
+0% {
+    transform: translateX(100vw);
+    opacity: 0;
+}
+
+5% {
+    transform: translateX(95vw);
+    opacity: 0.15
+}
+
+10% {
+    transform: translateX(90vw);
+    opacity: 0.1;
+}
+
+15% {
+    transform: translateX(85vw)
+    opacity: 0.20
+}
+
+20% {
+    transform: translateX(80vw);
+    opacity: 0.2;
+}
+
+25% {
+    transform: translateX(75vw)
+    opacity: 0.20
+}
+
+30% {
+    transform: translateX(70vw);
+    opacity: 0.3;
+}
+
+35%{
+    transform: translateX(75vw)
+    opacity: 0.35;
+}
+
+40% {
+    transform: translateX(60vw);
+    opacity: 0.4;
+}
+
+45%{
+    transform: translateX(55vw)
+    opacity: 0.45;
+}
+
+50% {
+    transform: translateX(50vw);
+    opacity: 0.5;
+}
+
+55%{
+    transform: translateX(45vw)
+    opacity: 0.55;
+}
+
+60% {
+    transform: translateX(40vw);
+    opacity: 0.6;
+}
+
+65%{
+    transform: translateX(65vw)
+    opacity: 0.65;
+}
+
+70% {
+    transform: translateX(30vw);
+    opacity: 0.7;
+}
+
+75%{
+    transform: translateX(25vw)
+    opacity: 0.75;
+}
+
+80% {
+    transform: translateX(20vw);
+    opacity: 0.8;
+}
+
+85%{
+    transform: translateX(15vw)
+    opacity: 0.85;
+}
+
+90% {
+    transform: translateX(10vw);
+    opacity: 0.9;
+}
+
+95%{
+    transform: translateX(5vw)
+    opacity: 0.95;
+}
+
+100%{
+    transform: translateX(0vw);
+    opacity: 1;
+}
+}
+
+
+@keyframes imgTransitionPrev {
+0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+}
+
+5% {
+    transform: translateX(-95vw);
+    opacity: 0.15
+}
+
+10% {
+    transform: translateX(-90vw);
+    opacity: 0.1;
+}
+
+15% {
+    transform: translateX(-85vw)
+    opacity: 0.20
+}
+
+20% {
+    transform: translateX(-80vw);
+    opacity: 0.2;
+}
+
+25% {
+    transform: translateX(-75vw)
+    opacity: 0.20
+}
+
+30% {
+    transform: translateX(-70vw);
+    opacity: 0.3;
+}
+
+35%{
+    transform: translateX(-75vw)
+    opacity: 0.35;
+}
+
+40% {
+    transform: translateX(-60vw);
+    opacity: 0.4;
+}
+
+45%{
+    transform: translateX(-55vw)
+    opacity: 0.45;
+}
+
+50% {
+    transform: translateX(-50vw);
+    opacity: 0.5;
+}
+
+55%{
+    transform: translateX(-45vw)
+    opacity: 0.55;
+}
+
+60% {
+    transform: translateX(-40vw);
+    opacity: 0.6;
+}
+
+65%{
+    transform: translateX(-65vw)
+    opacity: 0.65;
+}
+
+70% {
+    transform: translateX(-30vw);
+    opacity: 0.7;
+}
+
+75%{
+    transform: translateX(-25vw)
+    opacity: 0.75;
+}
+
+80% {
+    transform: translateX(-20vw);
+    opacity: 0.8;
+}
+
+85%{
+    transform: translateX(-15vw)
+    opacity: 0.85;
+}
+
+90% {
+    transform: translateX(-10vw);
+    opacity: 0.9;
+}
+
+95%{
+    transform: translateX(-5vw)
+    opacity: 0.95;
+}
+
+100%{
+    transform: translateX(0vw);
+    opacity: 1;
+}
+}
+
+@media only screen and (max-width: 1280px) {
+.gallery-wrapper .gallery-inner {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media only screen and (max-width: 768px) {
+.gallery-wrapper .gallery-inner {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-popup .next {
+    right: 25px;
+}
+.gallery-popup .prev {
+    left: 25px;
+}
+.gallery-popup .close {
+right: 25px;
+        }
+
+.gallery-popup {
+    top: 300px !important;
+    left: 50% !important;
+    transform: translate(-50%, 0%);
+    height: calc(350px - 60px)
+}
+}
+
+@media only screen and (max-width: 600px) {
+.gallery-wrapper .gallery-inner {
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+`;
+
+const body = document.querySelector("body");
+const galleryWrapper = document.querySelector(".gallery-wrapper");
+
+const styeElement = document.createElement("style");
+styeElement.innerHTML = galleryStyleSheet;
+styeElement.style.display = "none";
+body.append(styeElement);
+
+const galleryPopup = document.createElement("div");
+galleryPopup.className = "gallery-popup";
+
+galleryPopup.innerHTML = `
+<button class="close">&times;</button>
+    <span class="next">&#187;</span>
+    <span class="prev">&#171;</span>
+    <img src="" alt="">
+`;
+
+const galleryOverlay = document.createElement("div");
+galleryOverlay.className = "gallery-overlay";
+body.prepend(galleryOverlay);
+body.prepend(galleryPopup);
+
+const images = [...galleryWrapper.querySelectorAll(".gallery-img img")];
+const closeBtn = galleryPopup.querySelector(".close");
+const nextBtn = galleryPopup.querySelector(".next");
+const prevBtn = galleryPopup.querySelector(".prev");
+
+nextBtn.addEventListener("click", nextImg);
+prevBtn.addEventListener("click", prevImg);
+
+// Creating Animation For Image Transition
+const imgTransitionNext = `animation: imgTransitionNext 0.45s linear`;
+const imgTransitionPrev = `animation: imgTransitionPrev 0.45s linear`;
+let showImg = galleryPopup.querySelector(".gallery-popup img");
+
+let selectedImg = null;
+let startCount = 0;
+let endCount = images.length - 1;
+
+closeBtn.addEventListener("click", (e) => {
+galleryPopup.style.display = "none";
+galleryPopup.classList.remove("active");
+selectedImg === null;
+startCount = 0;
+endCount = images.length - 1;
+body.style.overflow = "auto";
+});
+
+// Click Next Button Function
+function nextImg() {
+if (selectedImg < 0) return;
+if (selectedImg === endCount) {
+    selectedImg = startCount;
+} else {
+    selectedImg++;
+}
+showImg.src = images[selectedImg].src;
+addRemoveAnimationNext();
+}
+
+// Click Prev Button Function
+function prevImg() {
+if (selectedImg < 0) return;
+if (selectedImg === startCount) {
+    selectedImg = endCount;
+} else {
+    selectedImg--;
+}
+showImg.src = images[selectedImg].src;
+addRemoveAnimationPrev();
+}
+
+// Initial Click Handler
+images.forEach((img, index) => {
+img.addEventListener("click", (e) => {
+    galleryPopup.style.display = "flex";
+    galleryPopup.classList.add("active");
+    showImg.src = e.currentTarget.src;
+    selectedImg = index;
+    body.style.overflow = "hidden";
+});
+});
+
+// Function for add and Remove Style Attribute
+function addRemoveAnimationNext() {
+showImg.setAttribute("style", imgTransitionNext);
+setTimeout(() => {
+    showImg.setAttribute("style", "");
+}, 500);
+}
+
+function addRemoveAnimationPrev() {
+showImg.setAttribute("style", imgTransitionPrev);
+setTimeout(() => {
+    showImg.setAttribute("style", "");
+}, 500);
+}
+
+        </script>
+       
+
+
+        
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4"><i class="fas fa-star-of-life me-3"></i>Terapia</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorem impedit eos autem dolores laudantium quia, qui similique
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-white me-2"></i>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Quick Links</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Our Blog & News</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Our Team</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Terapia Services</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> All Services</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Physiotherapy</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Diagnostics</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Manual Therapy</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Massage Therapy</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Rehabilitation</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        
+    </body>
+
+</html>
