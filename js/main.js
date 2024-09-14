@@ -58,22 +58,23 @@
     });
 
 
-    // Modal Video
-    $(document).ready(function () {
-        var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
-        });
-        console.log($videoSrc);
-
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
-
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
+   // Modal Video
+$(document).ready(function () {
+    var $videoSrc;
+    $('.btn-play').click(function () {
+        $videoSrc = $(this).data("src");
     });
+
+    $('#videoModal').on('shown.bs.modal', function () {
+        // Add autoplay and necessary parameters to the video source
+        $("#video").attr('src', $videoSrc + "?autoplay=1&modestbranding=1&showinfo=0");
+    });
+
+    $('#videoModal').on('hide.bs.modal', function () {
+        // Remove video source to stop playing when the modal is closed
+        $("#video").attr('src', "");
+    });
+});
 
 
     // testimonial carousel
@@ -127,3 +128,31 @@
 
 })(jQuery);
 
+//fact count
+
+
+$(document).ready(function () {
+    $('.counter').each(function () {
+        var $this = $(this),
+            countTo = $this.attr('data-count');
+        
+        $this.waypoint(function () {
+            $({ countNum: $this.text().replace('+', '') }).animate({
+                countNum: countTo
+            },
+            {
+                duration: 2000,
+                easing: 'swing',
+                step: function () {
+                    $this.text(Math.floor(this.countNum) + '+');
+                },
+                complete: function () {
+                    $this.text(this.countNum + '+');
+                }
+            });
+        }, { offset: '100%', triggerOnce: true });
+    });
+});
+
+//youtube video
+  

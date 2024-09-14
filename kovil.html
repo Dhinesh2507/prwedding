@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>PR Wedding & Garlands - Kovil Functions Flowers Page</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <link rel="shortcut icon" href="img/fav-icon1.png" type="image/x-icon">
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <style>
+            .img-fluid {
+                max-width: 100%;
+                height: 600px; /* Maintains aspect ratio */
+                margin-bottom: 40px;
+            }
+            @media (max-width:768px){
+                .img-fluid {
+                max-width: 100%;
+                height: auto; /* Maintains aspect ratio */
+                margin-bottom: 40px;
+            }
+            }
+            .col-lg-6 p {
+                text-align: justify;
+                margin-bottom: 1rem; /* Optional */
+            }
+            /* Animation Keyframes */
+                @keyframes slideInLeft {
+                    from {
+                        transform: translateX(-100%);
+                        opacity: 0;
+                    }
+                    to {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+
+                @keyframes slideInRight {
+                    from {
+                        transform: translateX(100%);
+                        opacity: 0;
+                    }
+                    to {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+
+                /* Apply animations */
+                .animate-left {
+                    animation: slideInLeft 1s ease-out;
+                }
+
+                .animate-right {
+                    animation: slideInRight 1s ease-out;
+                }
+                            .team-img {
+                    position: relative;
+                    overflow: hidden;
+                    height: 300px; /* Adjust this value as needed */
+                    width: 100%; /* Make sure it takes the full width of its container */
+                }
+
+                .team-img img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; /* Ensure the image covers the area without distortion */
+                    transition: transform 0.3s ease;
+                }
+
+                .team-img:hover img {
+                    transform: scale(1.1);
+                }
+                .team-item {
+                    margin-bottom: 30px;
+                }
+                .team-icon {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+
+                .team-img:hover .team-icon {
+                    opacity: 1;
+                }
+
+                .overlay {
+                    background: rgba(0, 0, 0, 0.5);
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .team-img:hover .overlay {
+                    opacity: 1;
+                }
+
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                .scroll-offset {
+                    padding-top: 80px; /* Adjust this value based on your header height */
+                    margin-top: -80px; /* Same value as padding-top to ensure the section is not pushed down */
+                }
+        </style>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+   <!-- Topbar Start -->
+<div id="custom-topbar" class="container-fluid px-5 d-none d-lg-block">
+    <div class="row gx-0 align-items-center" style="height: 45px;">
+        <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+            <div class="d-flex flex-wrap">
+                <a href="#" class="text-dark fw-bold me-4"><i class="fas fa-map-marker-alt me-2"></i>Thiruvarabur Trichy</a>
+                <a href="#" class="text-dark fw-bold me-4"><i class="fas fa-phone-alt me-2"></i>+91 90475 10493</a>
+                <a href="#" class="text-dark fw-bold me-0"><i class="fas fa-envelope me-2"></i>prweddinggarland@gamil.com</a>
+            </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+            <div class="d-flex align-items-center justify-content-end">
+                <a href="https://www.facebook.com/prweddinggarlands?mibextid=ZbWKwL" target="_blank" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/garlandprwedding?igsh=YW4zcDRleXJ3cjVp" target="_blank" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/919047510493?text=Hello, I would like to inquire about the flower arrangements at your shop." class="btn btn-light btn-square border rounded-circle nav-fill me-0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+<style>
+    /* CSS for the custom topbar */
+#custom-topbar {
+    background-color: #58fd52d7; /* Green background */
+    color: coral; /* Default text color */
+}
+
+#custom-topbar a {
+    color: coral; /* Default link color */
+}
+
+#custom-topbar i {
+    color: orange; /* Default icon color */
+}
+
+#custom-topbar a:hover, 
+#custom-topbar i:hover {
+    color: blue; /* Icon and text hover color */
+}
+
+#custom-topbar .btn-light {
+    background-color: white;
+    border-color: lightgray;
+}
+
+#custom-topbar .btn-light:hover {
+    background-color: lightblue; /* Button hover background color */
+    border-color: blue; /* Button hover border color */
+}
+
+</style>
+
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <!--<h1 class="text-primary m-0"><i class="fas fa-star-of-life me-3"></i>Te1rapia</h1>-->
+                    <img src="img/logo.png" alt="Logo"> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="garlands.html" class="dropdown-item">Flower Garlands</a>
+                                <a href="bridal.html" class="dropdown-item">Flower Bridal</a>
+                                <a href="babyshower.html" class="dropdown-item">Baby Shower Flowers</a>
+                                <a href="vasakalmalai.html" class="dropdown-item">Vasakal Malai</a>
+                                <a href="accessories.html" class="dropdown-item">Flower Accessories</a>
+                                <a href="kovil.html" class="dropdown-item">Kovil Functions Flowers</a>
+                                <a href="bouquet.html" class="dropdown-item">Custom Bouquets</a>
+                                <a href="sympathy.html" class="dropdown-item">Sympathy Arrangements</a>  
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                    <a href="index.html#cont" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Blossoms</a>
+                </div>
+            </nav>
+
+ 
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Header Start -->
+            <div class="container-fluid" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/ko.png'); background-position: center center; background-repeat: no-repeat; background-size: cover; padding: 160px 0 60px 0;">
+                <div class="container text-center py-5" style="max-width: 900px;">
+                    <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Kovil Function Flowers</h3>
+                    <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown custom-breadcrumb" data-wow-delay="0.3s">
+                        <li class="breadcrumb-item"><a href="index.html" style="color: aliceblue;">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#" style="color: aliceblue;">Services</a></li>
+                        <li class="breadcrumb-item active" style="color: rgb(255, 86, 20);">Kovil Function Flowers</li>
+                    </ol>
+                </div>
+            </div>
+            <!-- Header End -->
+
+            <!-- First Section: Image on Left, Text on Right -->
+            <section class="container py-5">
+                <div class="row align-items-center">
+                    <!-- Left Side Image -->
+                    <div class="col-lg-6 mb-4 animate-left">
+                        <img src="img/god.png" class="img-fluid rounded shadow-lg" alt="Kovil Function Flowers">
+                    </div>
+                    <!-- Right Side Text -->
+                    <div class="col-lg-6 animate-right">
+                        <h2>Elegant Flowers for Kovil Functions</h2>
+                        <p class="lead">At PR Wedding Garlands, we provide exquisite floral arrangements tailored for kovil functions, ensuring that your event is both sacred and beautiful. Our floral designs are crafted to enhance the spiritual ambiance of your celebration.</p>
+                        <p>We specialize in creating traditional and vibrant flower arrangements that are perfect for kovil ceremonies. From temple decorations to garlands, each piece is made with fresh, high-quality flowers that honor the sanctity of the occasion.</p>
+                        <p>Our skilled florists work with you to design custom arrangements that reflect the cultural and religious significance of the event. Choose from a variety of traditional and modern floral styles that best suit your needs.</p>
+                        <p>Let us help you create a memorable and spiritually uplifting experience with our beautiful flower arrangements for kovil functions.</p>
+                        <a href="#flower-section" class="btn btn-primary rounded-pill py-2 px-4" onclick="scrollToSection(event, 'flower-section')">Explore Our Kovil Function Flowers</a>
+                        <script>
+                        function scrollToSection(event, id) {
+                            event.preventDefault(); // Prevent default anchor click behavior
+                            
+                            const target = document.getElementById(id);
+                            if (target) {
+                                const offset = 80; // Adjust based on header height
+                                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                                
+                                window.scrollTo({
+                                    top: targetPosition,
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }
+                        </script>
+                    </div>                            
+                </div>
+            </section>
+            <!-- First Section End -->
+
+            <!-- Our Works Section -->
+            <section id="flower-section" class="bg-light py-5 scroll-offset">
+                <div class="container">
+                    <h2 class="text-center mb-5">Our Works</h2>
+                    <div class="row">
+                        <!-- Work Item 1 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="team-item rounded">
+                                <div class="team-img rounded-top position-relative overflow-hidden">
+                                    <img src="img/god/31.png" class="img-fluid w-100" alt="Temple Garland">
+                                    <div class="team-icon d-flex justify-content-center position-absolute w-100 h-100 top-0 start-0"></div>
+                                </div>
+                                <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
+                                    <h5>Temple Garland</h5>
+                            
+                                    <p class="mb-0">Traditional garland made with fresh marigold and jasmine flowers.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Work Item 2 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="team-item rounded">
+                                <div class="team-img rounded-top position-relative overflow-hidden">
+                                    <img src="img/god/32.png" class="img-fluid w-100" alt="Sacred Floral Arrangement">
+                                    <div class="team-icon d-flex justify-content-center position-absolute w-100 h-100 top-0 start-0"></div>
+                                </div>
+                                <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
+                                    <h5>Sacred Floral Arrangement</h5>
+                                 
+                                    <p class="mb-0">A beautiful arrangement of lotus and hibiscus flowers.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Work Item 3 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="team-item rounded">
+                                <div class="team-img rounded-top position-relative overflow-hidden">
+                                    <img src="img/god/33.png" class="img-fluid w-100" alt="Divine Temple Decor">
+                                    <div class="team-icon d-flex justify-content-center position-absolute w-100 h-100 top-0 start-0"></div>
+                                </div>
+                                <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
+                                    <h5>Divine Temple Decor</h5>
+                           
+                                    <p class="mb-0">Elegant flower decoration for temple altars and prayer areas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Work Item 4 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="team-item rounded">
+                                <div class="team-img rounded-top position-relative overflow-hidden">
+                                    <img src="img/god/34.png" class="img-fluid w-100" alt="Festive Marigold Setup">
+                                    <div class="team-icon d-flex justify-content-center position-absolute w-100 h-100 top-0 start-0"></div>
+                                </div>
+                                <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
+                                    <h5>Festive Marigold Setup</h5>
+                     
+                                    <p class="mb-0">Bright marigold decorations for festive occasions.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Work Item 5 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="team-item rounded">
+                                <div class="team-img rounded-top position-relative overflow-hidden">
+                                    <img src="img/god/35.png" class="img-fluid w-100" alt="Sacred Lotus Arrangement">
+                                    <div class="team-icon d-flex justify-content-center position-absolute w-100 h-100 top-0 start-0"></div>
+                                </div>
+                                <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
+                                    <h5>Sacred Lotus Arrangement</h5>
+                    
+                                    <p class="mb-0">A serene and sacred arrangement featuring lotus flowers.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Work Item 6 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="team-item rounded">
+                                <div class="team-img rounded-top position-relative overflow-hidden">
+                                    <img src="img/god/36.png" class="img-fluid w-100" alt="Traditional Floral Garland">
+                                    <div class="team-icon d-flex justify-content-center position-absolute w-100 h-100 top-0 start-0"></div>
+                                </div>
+                                <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
+                                    <h5>Traditional Floral Garland</h5>
+                     
+                                    <p class="mb-0">Classic garland with a mix of traditional flowers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Our Works Section End -->
+
+
+                <!--our process start-->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.1.2/wow.min.js"></script>
+
+                    <section id="our-process" class="py-5">
+                        <div class="container">
+                            <h2 class="text-center mb-5" data-aos="fade-up">Our Process for Kovil Functions Flowers</h2>
+                            <div class="row">
+                                <!-- Step 1 -->
+                                <div class="col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="process-step text-center">
+                                        <div class="step-icon mb-3">
+                                            <i class="fas fa-comments fa-3x text-primary"></i>
+                                        </div>
+                                        <h4 class="mb-3">Initial Consultation</h4>
+                                        <p>We begin by consulting with you to understand the specific requirements for the temple function. Whether it’s for a puja, abhishekam, or special ritual, we offer guidance in selecting the appropriate flowers for the occasion.</p>
+                                    </div>
+                                </div>
+                                <!-- Step 2 -->
+                                <div class="col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="process-step text-center">
+                                        <div class="step-icon mb-3">
+                                            <i class="fas fa-seedling fa-3x text-primary"></i>
+                                        </div>
+                                        <h4 class="mb-3">Flower Selection</h4>
+                                        <p>Based on your needs, we help you choose the most suitable flowers for the temple event. From traditional garlands to special floral decorations, we ensure a blend of beauty and spirituality through our offerings.</p>
+                                    </div>
+                                </div>
+                                <!-- Step 3 -->
+                                <div class="col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="process-step text-center">
+                                        <div class="step-icon mb-3">
+                                            <i class="fas fa-hand-holding-heart fa-3x text-primary"></i>
+                                        </div>
+                                        <h4 class="mb-3">Handcrafting</h4>
+                                        <p>Our skilled artisans meticulously handcraft each garland and flower arrangement, ensuring they reflect the sanctity of the temple function. We use fresh and fragrant flowers, paying attention to traditional customs.</p>
+                                    </div>
+                                </div>
+                                <!-- Step 4 -->
+                                <div class="col-md-4 mb-4 wow fadeInDown" data-wow-delay="0.2s">
+                                    <div class="process-step text-center">
+                                        <div class="step-icon mb-3">
+                                            <i class="fas fa-check-circle fa-3x text-primary"></i>
+                                        </div>
+                                        <h4 class="mb-3">Quality Assurance</h4>
+                                        <p>Every garland and arrangement undergoes a thorough quality check to ensure they meet the temple’s high standards. We focus on the purity, freshness, and aesthetic appeal of each item, ensuring they are fit for divine worship.</p>
+                                    </div>
+                                </div>
+                                <!-- Step 5 -->
+                                <div class="col-md-4 mb-4 wow fadeInDown" data-wow-delay="0.2s">
+                                    <div class="process-step text-center">
+                                        <div class="step-icon mb-3">
+                                            <i class="fas fa-shipping-fast fa-3x text-primary"></i>
+                                        </div>
+                                        <h4 class="mb-3">On-Time Delivery</h4>
+                                        <p>We ensure that all flower arrangements and garlands are delivered on time, so your temple function runs smoothly. Our reliable delivery service guarantees that your flowers arrive fresh and ready for use in the temple ceremonies.</p>
+                                    </div>
+                                </div>
+                                <!-- Step 6 -->
+                                <div class="col-md-4 mb-4 wow fadeInDown" data-wow-delay="0.2s">
+                                    <div class="process-step text-center">
+                                        <div class="step-icon mb-3">
+                                            <i class="fas fa-smile fa-3x text-primary"></i>
+                                        </div>
+                                        <h4 class="mb-3">Satisfaction and Feedback</h4>
+                                        <p>Your satisfaction is paramount. We follow up after the function to ensure everything met your expectations, and we welcome your feedback to continuously improve our services for future temple functions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            new WOW().init();
+                        </script>
+                    </section>
+                <!--our process end-->
+
+
+
+<!-- Footer Start -->
+<div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <img src="img/logo.png" alt="Logo">
+                    <p>PR Wedding Garlands offers elegant wedding garlands and floral decorations, perfect for adding beauty to your special day. Fresh flowers and stunning designs for memorable celebrations.
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-share fa-2x text-white me-2"></i>
+                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.facebook.com/prweddinggarlands?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <!--<a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>-->
+                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.instagram.com/garlandprwedding?igsh=YW4zcDRleXJ3cjVp" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://wa.me/919047510493?text=Hello, I would like to inquire about the flower arrangements at your shop." target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Quick Links</h4>
+                    <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                    <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                    <a href="gallery.html"><i class="fas fa-angle-right me-2"></i> Gallery</a>
+                    <a href="garlands.html"><i class="fas fa-angle-right me-2"></i> Book Blossom</a>
+                    <a href="privatepolicy.html"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                    <a href="terms.html"><i class="fas fa-angle-right me-2"></i>Terms & Conditions</a>
+                     
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Blooming Services</h4>
+                    <a href="garlands.html"><i class="fas fa-angle-right me-2"></i> Flower Garlands</a>
+                    <a href="bridal.html"><i class="fas fa-angle-right me-2"></i> Flower Bridal</a>
+                    <a href="babyshower.html"><i class="fas fa-angle-right me-2"></i> Baby Shower Flowers</a>
+                    <a href="vasakalmalai.html"><i class="fas fa-angle-right me-2"></i> Vasakal Malai</a>
+                    <a href="accessories.html"><i class="fas fa-angle-right me-2"></i> Flower Accessories</a>
+                    <a href="kovil.html"><i class="fas fa-angle-right me-2"></i> Kovil Functions Flowers</a>
+                    <a href="bouquet.html"><i class="fas fa-angle-right me-2"></i> Custom Bouquets</a>
+                    <a href="sympathy.html"><i class="fas fa-angle-right me-2"></i> Sympathy Arrangements</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Contact Info</h4>
+                    <a href=""><i class="fa fa-map-marker-alt me-2"></i>Thiruvarabur Trichy -13.</a>
+                    <a href=""><i class="fas fa-envelope me-2"></i> prweddinggarland@gamil.com</a>
+                    <a href=""><i class="fas fa-phone" style="transform: rotate(90deg);"></i> +91 90475 10493</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->        
+    
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-white"><a href="#" class="--bs-primary">&copy; 2024 PR Wedding Garlands</a>, All right reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-white">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="border-bottom" href="https://honeybei.com" target="_blank">honeybei-Trichy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>

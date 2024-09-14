@@ -80,8 +80,8 @@
 }
 
 .btn.btn-light:hover {
-    box-shadow: inset 300px 0 0 0 var(--bs-primary);
-    color: var(--bs-light) !important;
+    box-shadow: inset 300px 0 0 0 var(--bs-cyan);
+    color: rgb(247, 247, 247) !important;
 }
 
 .btn-hover {
@@ -174,6 +174,7 @@
 
 .topbar a,
 .topbar a i {
+    color: black;
     transition: 0.5s;
 }
 
@@ -192,6 +193,49 @@
 
 
 /*** Navbar ***/
+.navbar-light .navbar-brand img {
+    margin-left: 250px;
+}
+
+.navbar-collapse {
+    margin-right: 250px;
+}
+
+/* For small screens */
+@media (max-width:768px){
+    .navbar-light .navbar-brand img {
+        margin-left: 20px; /* Adjust the left margin for small screens */
+    }
+
+    .navbar-collapse {
+        margin-right: 20px; /* Adjust the right margin for small screens */
+    }
+    .navbar-light .navbar-brand img {
+        max-height: 60px !important;
+        transition: .5s;
+    }
+    
+}
+@media (min-width: 769px) and (max-width:1640px) {
+
+    .navbar-light .navbar-brand img {
+        max-height: 70px !important;
+        transition: .5s;
+    }
+    
+    .sticky-top.navbar-light .navbar-brand img {
+        max-height: 70px !important;
+    }
+    
+    .navbar-light .navbar-brand img {
+        margin-left: 20px; /* Adjust the left margin for small screens */
+    }
+
+    .navbar-collapse {
+        margin-right: 20px; /* Adjust the right margin for small screens */
+    }
+}
+
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Open Sans', sans-serif;
     position: relative;
@@ -215,12 +259,12 @@
 }
 
 .navbar-light .navbar-brand img {
-    max-height: 50px;
+    max-height: 80px;
     transition: .5s;
 }
 
 .sticky-top.navbar-light .navbar-brand img {
-    max-height: 45px;
+    max-height: 80px;
 }
 
 .navbar .dropdown-toggle::after {
@@ -391,7 +435,7 @@
 .header-carousel .header-carousel-item img {
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 800px;
     margin-top: 95px;
     display: block;
     object-fit: cover;
@@ -425,7 +469,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.247);
 }
 
 .header-carousel .header-carousel-item .carousel-caption .carousel-caption-content {
@@ -433,36 +477,45 @@
     width: 75%;
     
 }
+
 /*** Carousel Hero Header End ***/
 
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-4.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slide1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 160px 0 60px 0;
 }
-
+ 
 .bg-breadcrumb .breadcrumb-item a {
     color: var(--bs-white) !important;
+}
+.custom-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    color: rgb(255, 255, 255); /* Change this to your desired color */
 }
 /*** Single Page Hero Header End ***/
 
 
 /*** Service Start ***/
 .service .service-item {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .2) ;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .2);
 }
 
 .service .service-item .service-img {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    width: 100%; /* Ensures the image container takes full width */
+    height: 250px; /* Set a fixed height */
 }
 
 .service .service-item .service-img img {
+    width: 100%; /* Ensure the image fills the container width */
+    height: 100%; /* Ensures image fills the height */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
     transition: 0.5s;
 }
 
@@ -477,7 +530,6 @@
     border-top-left-radius: 10px;
     transition: 0.5s;
     z-index: 5;
-    
 }
 
 .service .service-item:hover .service-img::before {
@@ -492,7 +544,6 @@
 .service .service-item .service-content {
     position: relative;
     z-index: 2;
-
 }
 
 .service .service-item .service-content::before {
@@ -504,28 +555,44 @@
     left: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: rgba(21, 185, 217, .5);
+    background: rgba(21, 217, 64, 0.5);
     transition: 0.5s;
     z-index: 3;
 }
 
 .service .service-item:hover .service-content::before {
-    background: rgba(21, 185, 217, .5);
+    background: rgba(21, 217, 64, 0.5);
     height: 100%;
 }
+.service .service-item .service-content .service-content-inner p{
+    text-align: justify;
+}
+.service .service-item .service-content .service-content-inner .btn-primary {
+    background-color: #ff5722; 
+    border-color: #ff5722;  
+    color: white;  
+}
 
+.service .service-item .service-content .service-content-inner .btn-primary:hover {
+    background-color: #ff784e; 
+    border-color: #ff784e;  
+    color: white;  
+}
+.service .service-item .service-content .service-content-inner .custom-btn{
+    text-align: justify;
+}
 .service .service-item .service-content .service-content-inner {
     transition: 0.5s;
 }
 
-
 .service .service-item:hover .service-content .service-content-inner {
     position: relative;
-    color: var(--bs-white) !important;
+    color: black;
     z-index: 9;
 }
+
 .service .service-item:hover .service-content .service-content-inner h5 {
-    color: var(--bs-secondary);
+    color: red;
 }
 
 /*** Service End ***/
@@ -559,8 +626,68 @@
     font-weight: 600;
     letter-spacing: 4px;
 }
+.container .section-title .text-secondary {
+    color: #000; /* Change the color to your desired value */
+}
 
 /*** About End ***/
+
+/** Fact count start **/
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.fact-counter {
+    position: relative;
+    background-image: url(../img/factban.png);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    color: white;
+}
+
+.fact-counter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(144, 238, 144, 0.5); /* Light green with some transparency */
+    z-index: 1; /* Ensure the overlay is behind the text but on top of the background image */
+}
+
+.fact-counter .icon-box {
+    background-color: var(--bs-primary);
+    border-radius: 100px;
+    padding: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2; /* Ensure icons are on top of the overlay */
+}
+
+.fact-counter .icon-box i {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.fact-counter .counter {
+    font-size: 3rem;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    z-index: 2; /* Ensure counter numbers are on top of the overlay */
+}
+
+.fact-counter p {
+    font-size: 1.2rem;
+    color: #fff;
+    position: relative;
+    z-index: 2; /* Ensure paragraph text is on top of the overlay */
+}
+/** Fact count End  **/
+
 
 /*** Feature Start ***/
 .feature .feature-item {
@@ -614,7 +741,7 @@
 
 /*** Appointment Start ***/
 .appointment {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/carousel-2.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/flow1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -798,7 +925,7 @@
 
 /*** testimonial Start ***/
 .testimonial {
-    background: linear-gradient(rgba(21, 185, 217, 0.9), rgba(21, 185, 217, 0.9)), url(../img/carousel-3.png);
+    background: linear-gradient(rgba(51, 51, 51, 0.425), rgba(250, 38, 38, 0.384)), url(../img/custrose.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -976,7 +1103,9 @@
     margin-left: -50px;
     border: 1px solid var(--bs-white) !important;
 }
-
+.testimonial .display-3 {
+    color: rgb(0, 187, 212);
+}
 .testimonial .section-title .sub-title {
     position: relative;
     display: inline-block;
@@ -1054,7 +1183,7 @@
 
 /*** Contact Start ***/
 .contact {
-    background: linear-gradient(rgba(21, 185, 217, 0.9), rgba(21, 185, 217, 0.9)), url(../img/carousel-3.png);
+    background: linear-gradient(rgba(21, 185, 217, 0.9), rgba(21, 185, 217, 0.9)), url(../img/carousel-4.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1149,27 +1278,58 @@
 }
 /*** Contact End ***/
 
+/*** FAQ'S Start ***/
+.faq {
+    position: relative;
+    overflow: hidden;
+}
+
+.faq::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../img/bg.png);
+    object-fit: cover;
+    z-index: -1;
+}
+
+.faq .faq-img {
+    position: relative;
+}
+
+.faq .faq-img .faq-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/*** FAQ'S End ***/
 
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/carousel-4.png);
+    background: linear-gradient(rgba(74, 211, 199, 0.9), rgba(64, 198, 207, 0.9)), url(../img/carousel-4.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .footer .footer-item a {
     line-height: 35px;
-    color: var(--bs-body);
+    color: black;
     transition: 0.5s;
 }
 
 .footer .footer-item p {
-    line-height: 35px;
+    line-height: 28px;
+    color: black;
+    text-align: justify;
 }
 
 .footer .footer-item a:hover {
-    letter-spacing: 2px;
-    color: var(--bs-primary);
+    letter-spacing: 0.5px;
+    color: red;
 }
 
 /*** Footer End ***/

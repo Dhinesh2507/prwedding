@@ -7,7 +7,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
-
+        <link rel="shortcut icon" href="img/fav-icon1.png" type="image/x-icon">
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,77 +43,108 @@
 
 
         <!-- Topbar Start -->
-        <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-            <div class="row gx-0 align-items-center" style="height: 45px;">
-                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                    <div class="d-flex flex-wrap">
-                        <a href="#" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
-                        <a href="#" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
-                        <a href="#" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-flex align-items-center justify-content-end">
-                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-0"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
+<div id="custom-topbar" class="container-fluid px-5 d-none d-lg-block">
+    <div class="row gx-0 align-items-center" style="height: 45px;">
+        <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+            <div class="d-flex flex-wrap">
+                <a href="#" class="text-dark fw-bold me-4"><i class="fas fa-map-marker-alt me-2"></i>Thiruvarabur Trichy</a>
+                <a href="#" class="text-dark fw-bold me-4"><i class="fas fa-phone-alt me-2"></i>+91 90475 10493</a>
+                <a href="#" class="text-dark fw-bold me-0"><i class="fas fa-envelope me-2"></i>prweddinggarland@gamil.com</a>
             </div>
         </div>
-        <!-- Topbar End -->
+        <div class="col-lg-4 text-center text-lg-end">
+            <div class="d-flex align-items-center justify-content-end">
+                <a href="https://www.facebook.com/prweddinggarlands?mibextid=ZbWKwL" target="_blank" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/garlandprwedding?igsh=YW4zcDRleXJ3cjVp" target="_blank" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/919047510493?text=Hello, I would like to inquire about the flower arrangements at your shop." class="btn btn-light btn-square border rounded-circle nav-fill me-0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+<style>
+    /* CSS for the custom topbar */
+#custom-topbar {
+    background-color: #58fd52d7; /* Green background */
+    color: coral; /* Default text color */
+}
+
+#custom-topbar a {
+    color: coral; /* Default link color */
+}
+
+#custom-topbar i {
+    color: orange; /* Default icon color */
+}
+
+#custom-topbar a:hover, 
+#custom-topbar i:hover {
+    color: blue; /* Icon and text hover color */
+}
+
+#custom-topbar .btn-light {
+    background-color: white;
+    border-color: lightgray;
+}
+
+#custom-topbar .btn-light:hover {
+    background-color: lightblue; /* Button hover background color */
+    border-color: blue; /* Button hover border color */
+}
+
+</style>
 
 
         <!-- Navbar & Hero Start -->
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
                 <a href="index.html" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"><i class="fas fa-star-of-life me-3"></i>Terapia</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                    <!--<h1 class="text-primary m-0"><i class="fas fa-star-of-life me-3"></i>Te1rapia</h1>-->
+                    <img src="img/logo.png" alt="Logo"> 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
                         <a href="about.html" class="nav-item nav-link active">About</a>
                         <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                             <div class="dropdown-menu m-0">
-                                <a href="appointment.html" class="dropdown-item">Appointment</a>
-                                <a href="feature.html" class="dropdown-item">Features</a>
-                                <a href="blog.html" class="dropdown-item">Our Blog</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
+                                <a href="garlands.html" class="dropdown-item">Flower Garlands</a>
+                                <a href="bridal.html" class="dropdown-item">Flower Bridal</a>
+                                <a href="babyshower.html" class="dropdown-item">Baby Shower Flowers</a>
+                                <a href="vasakalmalai.html" class="dropdown-item">Vasakal Malai</a>
+                                <a href="accessories.html" class="dropdown-item">Flower Accessories</a>
+                                <a href="kovil.html" class="dropdown-item">Kovil Functions Flowers</a>
+                                <a href="bouquet.html" class="dropdown-item">Custom Bouquets</a>
+                                <a href="sympathy.html" class="dropdown-item">Sympathy Arrangements</a> 
+                            </div>  
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     </div>
-                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Appointment</a>
+                    <a href="index.html#cont" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Blossoms</a>
                 </div>
-
-
             </nav>
         </div>
         <!-- Navbar End -->
 
 
-        <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h1>
-                <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-primary">About</li>
-                </ol>    
+ 
+          <!-- Header Start -->
+            <div class="container-fluid" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/abou.png'); background-position: center center; background-repeat: no-repeat; background-size: cover; padding: 160px 0 60px 0;">
+                <div class="container text-center py-5" style="max-width: 900px;">
+                    <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h3>
+                    <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown custom-breadcrumb" data-wow-delay="0.3s">
+                        <li class="breadcrumb-item"><a href="index.html" style="color: aliceblue;">Home</a></li>
+                
+                        <li class="breadcrumb-item active" style="color: rgb(255, 86, 20);">About</li>
+                    </ol>
+                </div>
             </div>
-        </div>
-        <!-- Header End -->
+            <!-- Header End -->
 
 
         <!-- About Start -->
@@ -709,96 +740,97 @@
         </div>-->
         <!-- Testimonial End -->
 
-
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4"><i class="fas fa-star-of-life me-3"></i>Terapia</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorem impedit eos autem dolores laudantium quia, qui similique
-                            </p>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-share fa-2x text-white me-2"></i>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Quick Links</h4>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> About Us</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Our Blog & News</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Our Team</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Terapia Services</h4>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> All Services</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Physiotherapy</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Diagnostics</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Manual Therapy</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Massage Therapy</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Rehabilitation</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Contact Info</h4>
-                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
-                            <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                            <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
-                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
-                        </div>
+<!-- Footer Start -->
+<div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <img src="img/logo.png" alt="Logo">
+                    <p>PR Wedding Garlands offers elegant wedding garlands and floral decorations, perfect for adding beauty to your special day. Fresh flowers and stunning designs for memorable celebrations.
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-share fa-2x text-white me-2"></i>
+                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.facebook.com/prweddinggarlands?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <!--<a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>-->
+                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.instagram.com/garlandprwedding?igsh=YW4zcDRleXJ3cjVp" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://wa.me/919047510493?text=Hello, I would like to inquire about the flower arrangements at your shop." target="_blank"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Footer End -->
-        
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end text-white">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
-                    </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Quick Links</h4>
+                    <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                    <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                    <a href="gallery.html"><i class="fas fa-angle-right me-2"></i> Gallery</a>
+                    <a href="garlands.html"><i class="fas fa-angle-right me-2"></i> Book Blossom</a>
+                    <a href="privatepolicy.html"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                    <a href="terms.html"><i class="fas fa-angle-right me-2"></i>Terms & Conditions</a>
+                     
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Blooming Services</h4>
+                    <a href="garlands.html"><i class="fas fa-angle-right me-2"></i> Flower Garlands</a>
+                    <a href="bridal.html"><i class="fas fa-angle-right me-2"></i> Flower Bridal</a>
+                    <a href="babyshower.html"><i class="fas fa-angle-right me-2"></i> Baby Shower Flowers</a>
+                    <a href="vasakalmalai.html"><i class="fas fa-angle-right me-2"></i> Vasakal Malai</a>
+                    <a href="accessories.html"><i class="fas fa-angle-right me-2"></i> Flower Accessories</a>
+                    <a href="kovil.html"><i class="fas fa-angle-right me-2"></i> Kovil Functions Flowers</a>
+                    <a href="bouquet.html"><i class="fas fa-angle-right me-2"></i> Custom Bouquets</a>
+                    <a href="sympathy.html"><i class="fas fa-angle-right me-2"></i> Sympathy Arrangements</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Contact Info</h4>
+                    <a href=""><i class="fa fa-map-marker-alt me-2"></i>Thiruvarabur Trichy -13.</a>
+                    <a href=""><i class="fas fa-envelope me-2"></i> prweddinggarland@gamil.com</a>
+                    <a href=""><i class="fas fa-phone" style="transform: rotate(90deg);"></i> +91 90475 10493</a>
+                    
                 </div>
             </div>
         </div>
-        <!-- Copyright End -->
+    </div>
+</div>
+<!-- Footer End -->      
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-md-0">
+                <span class="text-white"><a href="#" class="--bs-primary">&copy; 2024 PR Wedding Garlands</a>, All right reserved.</span>
+            </div>
+            <div class="col-md-6 text-center text-md-end text-white">
+                <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                Designed By <a class="border-bottom" href="https://honeybei.com" target="_blank">honeybei-Trichy</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        
+<!-- Back to Top -->
+<a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-        
-    </body>
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+</body>
 
 </html>
